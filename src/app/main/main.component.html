@@ -1,3 +1,9 @@
-<app-carousel></app-carousel>
-<app-carousel></app-carousel>
-<app-carousel></app-carousel>
+<!-- <div class="carousel-group" *ngFor="let item of content"> -->
+<!-- <app-carousel [hero]="item" type="firstCarousel"></app-carousel>
+</div> -->
+<!-- <app-carousel></app-carousel>
+<app-carousel></app-carousel> -->
+
+<app-carousel type="firstCarousel" [firstData]="carouselContent1" [secondData]="carouselContent2" [thirdData]="carouselContent3"></app-carousel>
+<app-carousel type="secondCarousel"></app-carousel>
+<app-carousel type="thirdCarousel"></app-carousel>

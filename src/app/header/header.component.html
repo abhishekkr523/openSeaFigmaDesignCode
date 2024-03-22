@@ -52,7 +52,7 @@
                 <div class="collapse-div">
                     <ul class="ul-text">
                         <li [class.active]="activeIndex1 === 0" (click)="setActive1(0)" class="">
-                            <a  href="#" style="Size:24px;
+                            <a href="#" style="Size:24px;
                     line-height: 29.05px; color: #FFFFFF;">All</a>
                         </li>
                         <li [class.active]="activeIndex1 === 1" (click)="setActive1(1)">
@@ -83,77 +83,54 @@
                 </div>
             </div>
         </nav>
+
+
+
+        <owl-carousel-o [options]="customOptions" class="photos">
+            <ng-template carouselSlide>
+                <div class="card">
+                    <img src="/assets/images/Rectangle 5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Man’s AI</h5>
+                        <p class="card-text">Floor: 0.01 ETH</p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="card">
+                    <img src="/assets/images/Rectangle 6 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hairy_Girl</h5>
+                        <p class="card-text">Floor: 0.10 ETH</p>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="card">
+                    <img src="/assets/images/Rectangle 7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Man’s AI</h5>
+                        <p class="card-text">Floor: 0.03 ETH</p>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
     </div>
 
 
 
-    <owl-carousel-o [options]="customOptions" class="photos">
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 6 (1).png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 6 (1).png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template carouselSlide>
-            <div class="card">
-                <img src="/assets/images/Rectangle 7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </ng-template>
-    </owl-carousel-o>
+
 
 </div>
 <nav class=" toggle-btn">
     <ul class=" ul-text">
         <div class="trending-top">
             <li class="active" [class.active]="activeIndex2 === 0" (click)="setActive2(0)">
-                <a  href="#" style="Size:24px;
+                <a href="#" style="Size:24px;
                 line-height: 29.05px; color: #000000;">Trending</a>
             </li>
             <li [class.active]="activeIndex2 === 1" (click)="setActive2(1)">
-                <a  href="#" style="Size:24px;
+                <a href="#" style="Size:24px;
                 line-height: 29.05px; color: #000000;">Top</a>
             </li>
         </div>
@@ -189,7 +166,8 @@
 
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid ">
+
     <table class="table">
         <thead>
             <tr>
@@ -208,7 +186,10 @@
             </tr>
             <tr>
                 <th scope="row">2</th>
-                <td><img src="/assets/images/Rectangle 13.png" alt=""><span>DakieBase</span></td>
+                <td><img src="/assets/images/Rectangle 13.png" alt=""><span>DakieBase</span> <img
+                        src="/assets/images/Vector (11).png" alt=""
+                        style="height: 8px;width: 8px; border-radius: 50%; background-color: rgb(18, 53, 214); margin-left: 4px;">
+                </td>
                 <td>0.01 ETH</td>
                 <td>103 ETH</td>
             </tr>
@@ -220,7 +201,10 @@
             </tr>
             <tr>
                 <th scope="row">3</th>
-                <td><img src="/assets/images/Rectangle 15.png" alt=""><span>Punks2k</span></td>
+                <td><img src="/assets/images/Rectangle 15.png" alt=""><span>Punks2k</span><img
+                        src="/assets/images/Vector (11).png" alt=""
+                        style="height: 8px;width: 8px; border-radius: 50%; background-color: rgb(18, 53, 214); margin-left: 4px;">
+                </td>
                 <td>0.10 ETH</td>
                 <td>16 ETH</td>
             </tr>

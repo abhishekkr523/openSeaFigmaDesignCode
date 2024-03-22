@@ -9,7 +9,7 @@
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation" (click)="toggleSideNav()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse collapse-div" id="navbarSupportedContent">
@@ -46,6 +46,12 @@
             </div>
         </nav>
 
+        <div class="side-nav" [ngClass]="{'show': showSideNav}">
+            <ul class="side-nav-list">
+                <li><a href="#">Drops</a></li>
+                <li><a href="#">Stats</a></li>
+            </ul>
+        </div>
 
         <nav class="nav-bar2">
             <div class=" cont-fluid">
@@ -88,7 +94,7 @@
 
         <owl-carousel-o [options]="customOptions" class="photos">
             <ng-template carouselSlide>
-                <div class="card">
+                <div class="card card1">
                     <img src="/assets/images/Rectangle 5.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Man’s AI</h5>
@@ -97,7 +103,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card">
+                <div class="card card2">
                     <img src="/assets/images/Rectangle 6 (1).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hairy_Girl</h5>
@@ -106,7 +112,7 @@
                 </div>
             </ng-template>
             <ng-template carouselSlide>
-                <div class="card">
+                <div class="card card3">
                     <img src="/assets/images/Rectangle 7.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Man’s AI</h5>
@@ -155,7 +161,8 @@
             </div>
             <li class="toggle-item1">
                 <a class="nav-link active" aria-current="page" href="#" style="Size:24px;
-                    line-height: 29.05px; color: #000000;">All chains <img src="/assets/images/Vector (13).png" alt="" style="color: #070000;"></a>
+                    line-height: 29.05px; color: #000000;">All chains <img src="/assets/images/Vector (13).png" alt=""
+                        style="color: #070000;"></a>
             </li>
             <li class="toggle-item2">
                 <a class="nav-link active" aria-current="page" href="#" style="Size:24px;
@@ -166,7 +173,7 @@
 
 </nav>
 
-<div class="container-fluid ">
+<div class="container-fluid  " style="overflow-x: auto;">
 
     <table class="table">
         <thead>

@@ -30,11 +30,12 @@ export class HeaderComponent {
     dots: false,
     navSpeed: 700,
     navText: ['', ''],
+    // margin:10,
     responsive: {
       0: {
         items: 1
       },
-      400: {
+      422: {
         items: 2
       },
       740: {
@@ -46,5 +47,11 @@ export class HeaderComponent {
     },
     nav: true
   }
+
+  showSideNav: boolean = false;
+
+    toggleSideNav(): void {
+        this.showSideNav = !this.showSideNav;
+    }
 }
 
